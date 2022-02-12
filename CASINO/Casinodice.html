@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Mikesael Nieves Assignment "Building blocks for your space base"-->
+
+<!--At casino dice, we don't tell you which dice game to play or how to play it. The decision as to which path to take is entirely up to you. 
+    We are merely serving as a randomizer. Simply conceive of a game you'd like to play and then roll the dice to see if you win or lose.
+    Its easy to do, just hit reload on the browser to roll the dice. This is still a work in progress, working on a way to add wage bets
+    as you can see with wage bets option. Have fun and enjoy. -->
+
+<head>
+    <!--These are the CSS and Javascript files being linked to the HTML file-->
+    <script src="casinodice.js"></script>
+    <title>Casino Dice</title>
+    <link rel="stylesheet" href="casinogame.css">
+</head>
+
+<body>
+    <!--The header for the Dice page-->
+    <h1>Casino Dice</h1>
+
+
+
+    <!--Inline css-->
+    <img src="hour.png" style="float:left;width:500px;height:500px; margin-top: 40px; margin-left: 150px;">
+
+
+    <!--Used placebet as sort of an alert function-->
+    <div class="container bottom">
+        <button type="button" class="placebet" class="Roll" onClick="placeBet()">
+            Place Bet
+        </button>
+
+        <br>
+        <br>
+
+    </div>
+
+    <!--Div class container I can manipulate with my css or javascript-->
+    <div class="container">
+
+        <!--Wrapper, sort of like container but not really. It is something that wraps around a single object to provide more functionality and interface to it.-->
+        <div class="dice-wrapper">
+            <img src="dice-01.svg" id="die-1">
+            <img src="dice-02.svg" id="die-2">
+            <p id="total"></p>
+        </div>
+
+
+    </div>
+    </div>
+
+    <center>
+
+        <!--Paragraph with a CSS element -->
+
+        <p class="roll">Reload page to Roll</p>
+
+
+    </center>
+   <!--Location of MP3 file
+--> <audio id="myAudio">
+    <source src="ytmp3free.cc_120-essential-casino-gambling-sound-fx-youtubemp3free.org.mp3" type="audio/ogg">
+    <source src="ytmp3free.cc_120-essential-casino-gambling-sound-fx-youtubemp3free.org.mp3" type="audio/mpeg">
+
+  </audio>
+
+
+  <center>
+    <!--Play and Pause button for Audio-->
+    <button onclick="playAudio()" type="button">Play Audio</button>
+    <button onclick="pauseAudio()" type="button">Pause Audio</button>
+
+    <script>
+      var x = document.getElementById("myAudio");
+
+      //play sound when button is pressed
+      function playAudio() {
+        x.play();
+      }
+      //pause sound when button is pressed
+      function pauseAudio() {
+        x.pause();
+      } 
+    </script>
+<br>
+<br>
+<a href="index.html" type="button" style="color: aliceblue;">Home</a>
+<br>
+<br>
+<a href="dataload.html" type="button" style="color: aliceblue;">Space Data</a>
+
+  </center>
+  
+
+</body>
+
+</html>
