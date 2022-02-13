@@ -237,3 +237,18 @@ footer {
 
 
 }
+
+
+footer {
+
+
+  background: blueviolet;
+  font-family: "Poppins", cursive;
+  border-radius: 2px;
+  color: #ffff;
+  font-size: 20px;
+  padding: 16px 25px 16px 25px;
+  text-decoration: none;
+
+
+}
