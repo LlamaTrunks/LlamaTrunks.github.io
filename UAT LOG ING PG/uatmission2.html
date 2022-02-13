@@ -1,0 +1,129 @@
+<!--This is Mikesael Nieves Webpage for UAT space program countdown-->
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+  <!--Link external JS file to my HTML file-->
+  <script src="uatmission3.js"></script>
+
+  <!--external CSS styling-->
+  <link rel="stylesheet" href="UATMISSION.CSS">
+
+  <!--Using script inside the HTML file and not external-->
+  <script>
+
+
+
+    //Testing an alert function
+    alert("Testing the function for the alerts.")
+
+  </script>
+
+
+
+
+
+  <style>
+    /*added a background image using a URL link*/
+    body {
+      background-image:
+        url('https://i.ibb.co/YBXmsBR/2152075.jpg');
+    }
+  </style>
+
+
+
+
+  <!--This is the title for the webpage-->
+  <title>UAT MISSION</title>
+
+</head>
+
+
+<body>
+
+  <!--Here I used HTML to center everything that is inside the body-->
+  <center>
+
+    <!--He are I used break to create a space and drop the Logo a little bit lower-->
+    <br>
+    <br>
+
+
+    <!--This is the source for the UAT SPACE LOGO-->
+    <img src="https://i.ibb.co/SskcJxw/UATspace-Logo-2.jpg" alt="UATspace-Logo-2">
+
+    <br>
+    <br>
+
+    <!--Header 1 for UAT Space Program-->
+    <h1>UAT Space Program</h1>
+
+    <br>
+
+    <!--A paragraph stating under here is where the countdown will happen-->
+    <p>Press the Start button to begin the countdown for Blastoff</p>
+    <br>
+    <!--This is a header 2 for the countdown-->
+    <h2><strong>Countdown</strong></h2>
+
+    <br>
+    <br>
+
+    <!--These are Start/stop buttons for the countdown-->
+    <button type="button" onclick="BeginCountdown()">Start</button>
+    <button type="button" onclick="StopCountdown()">Stop</button>
+
+    <!--ID given to the countdown for use on JAVASCRIPT-->
+    <p id="CountdownTracker">10</p>
+
+  </center>
+
+  <!--Location of MP3 file
+--> <audio id="myAudio">
+    <source src="us-lab-background.mp3" type="audio/ogg">
+    <source src="us-lab-background.mp3" type="audio/mpeg">
+
+  </audio>
+
+
+  <center>
+    <!--Play and Pause button for Audio-->
+    <button onclick="playAudio()" type="button">Play Audio</button>
+    <button onclick="pauseAudio()" type="button">Pause Audio</button>
+
+    <script>
+      var x = document.getElementById("myAudio");
+
+      //play sound when button is pressed
+      function playAudio() {
+        x.play();
+      }
+      //pause sound when button is pressed
+      function pauseAudio() {
+        x.pause();
+      } 
+    </script>
+
+<br>
+    <br>
+    <a href="index.html" type="button" style="color: aliceblue;">Home</a>
+    <br>
+    <br>
+    <a href="dataload.html" type="button" style="color: aliceblue;">Space Data</a>
+
+
+  </center>
+
+
+
+
+
+
+</body>
+
+
+</html>

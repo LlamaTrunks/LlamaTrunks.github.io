@@ -1,0 +1,45 @@
+
+/* This is my stylesheet for my HTML file */
+
+
+
+h1 {
+    color:
+      black;
+    outline:
+      whitesmoke;
+    font-size:
+      40px;
+    font-style:
+      initial;
+  }
+
+  p {
+    color:
+      white;
+    outline:
+      black;
+    font-size:
+      20px;
+  }
+
+  h2 {
+    color:
+      red;
+    outline:
+      whitesmoke;
+    font-size:
+      xx-large;
+  }
+
+  button {
+    font-size:
+      25px;
+      border-radius: 200px;
+  }
+
+
+
+
+
+
